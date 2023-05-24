@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Practicas con alertas</title>
+    
+    </head>
+
+<body>
+	<h2>Alertas con HTML y JavaScript</h2>
+
+	<input type="button" value="Mensaje" onclick="alert('Mensaje con JavaScript´;)">
+	
+	<hr>
+	<g>alerta al presionar un checkbox</g>
+		<input type="checkbox" name="presion" onclick="presion()">
+		<hr>
+		<g> escribir con javascript</g>
+		<a href="javascript:alert(´has llegado a una alerta´);">darle click</a>
+		<hr>
+		<a href="javascript:window.print();">Imprimir pantalla</a>
+		<hr>
+		<p> alerta con opciones aceptar y cancelar</p>
+		<a href="#" onclick="salir()"> salir de la practica</a>
+		<input type="button" value="escribe el mensaje" onclick="escribir()">
+		<!-- funcion boton -->
+		<script>
+			function mensaje(){
+				alert("esto es una alerta");
+			}
+			</script>
+			<!-- funcion checkbox -->
+			<script>
+				function presion(){
+					alert("le has dado click");
+				}
+				</script>
+				<!-- funcion escribir-->
+				<!-- texto
+					<script>
+					function escribir(){
+						document.write("Es facil trabajar con write");
+					}
+					</script>
+				-->
+				<script>
+					function salir(){
+						var salir = confirm("Desea salir")
+						if (salir){
+							alert("saliendo")
+							window.location ="http://iscjoseluischavez.com.mx";
+
+						}
+						else{
+							alert("Gracias")
+
+						}
+						
+					}	
+				</script>
+
+		</body>
+	</html>
